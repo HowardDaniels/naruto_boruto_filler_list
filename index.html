@@ -4,16 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <title>Naruto and Boruto Filler List</title>
-    <!-- Latest compiled and minified CSS & JS
+    <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/lumen/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="assets/css/index.css">
-  <!--  <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>  -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div id="background1">
     <h1>Naruto and Boruto Filler List</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <ul class="list-group todo-list">
+            <li class="list-group-item new-item">
+              <form id="todo-form">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10">
+                      <input class="new-item form-control" placeholder="Add an episode" type="text" />
+                    </div>
+                    <select name="series" id="series">
+                      <option value="placeholder">Select series</option>
+                      <option value="naruto">Naruto</option>
+                      <option value="naruto_shippuden">Naruto Shippuden</option>
+                      <option value="boruto">Boruto</option>
+                    </select>
+                    <input class="new-item form-control" placeholder="Add a number" type="text" />
+                    <select name="episode_types" id="episode_types">
+                      <option value="placeholder">Select episode type</option>
+                      <option value="manga_canon">Manga Canon</option>
+                      <option value="anime_canon">Anime Canon</option>
+                      <option value="mixed">Mixed Manga Canon/Filler</option>
+                      <option value="filler">Filler</option>
+                    </select>
+                    <input class="new-item form-control" placeholder="Add manga chapters" type="text" />
+                    <input class="new-item form-control" placeholder="Add Japanese release date" type="text" />
+                    <input class="new-item form-control" placeholder="Add US release date" type="text" />
+                    <div class="col-2">
+                      <button type="submit" class="btn btn-success">Add episode</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <span class="todo-container">
+            </span>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script src="assets/js/index.js" type="text/javascript"></script>
