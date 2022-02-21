@@ -1,3 +1,3 @@
-$( "#addEpisode" ).click(function() {
-    alert("Test");
+$("#addEpisode").click(function() {
+    alert(episode_types.value);
   });
