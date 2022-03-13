@@ -42,11 +42,25 @@
                       <option value="filler">Filler</option>
                     </select>
                     <input class="new-item form-control" placeholder="Add manga chapters" type="text" />
-                    <input class="new-item form-control" placeholder="Add Japanese release date" type="text" />
-                    <input class="new-item form-control" placeholder="Add US release date" type="text" />
-                    <div class="col-2">
-                      <button type="submit" class="btn btn-success" id="addEpisode">Add episode</button>
+                    <br>
+                    <div class="row">
+                    <form action="/action_page.php">
+                      <label for="japanese_release">Japanese release date: </label>
+                      <input type="date" id="japanese_release" name="japanese_release">
+                      <input type="submit">
+                    </form>
                     </div>
+                    <div class="row">
+                      <form action="/action_page.php">
+                        <label for="us_release">US release date: </label>
+                        <input type="date" id="us_release" name="us_release">
+                        <input type="submit">
+                      </form>
+                      </div>
+                  
+                      <div class="row" id="submitrow">
+                      <button type="submit" class="btn btn-success" id="addEpisode">Add episode</button>
+                      </div>
                   </div>
                 </div>
               </form>

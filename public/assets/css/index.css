@@ -8,3 +8,8 @@ body{
     background-color: blue;
     text-align: center;
 }
+
+#submitrow{
+    width: 500px;
+    text-align: center;
+}
